@@ -1,6 +1,6 @@
 - type: entity
   name: BaseWeaponShotgun
-  parent: BaseItem
+  parent: BaseItemThrowableBluntMedium #Karman
   id: BaseWeaponShotgun
   description: A rooty tooty point and shooty.
   abstract: true
@@ -50,7 +50,7 @@
 - type: entity
   name: Bulldog
   # Don't parent to BaseWeaponShotgun because it differs significantly
-  parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
+  parent: [BaseItemThrowableBluntMedium, BaseGunWieldable, BaseSyndicateContraband] #Karman BaseItemThrowableBluntMedium
   id: WeaponShotgunBulldog
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses .50 shotgun shells.
   components:

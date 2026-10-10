@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseItemThrowableBluntVerySmall #Karman
   id: Cane
   name: cane
   description: A wooden cane.

@@ -1,6 +1,6 @@
 - type: entity
   name: BaseWeaponRifle
-  parent: [BaseItem, BaseGunWieldable]
+  parent: [BaseItemThrowableBluntMedium, BaseGunWieldable] #Karman BaseItemThrowableBluntMedium
   id: BaseWeaponRifle
   description: A rooty tooty point and shooty.
   abstract: true
@@ -203,7 +203,7 @@
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
   - type: Gun
     minAngle: 21
-    maxAngle: 32 
+    maxAngle: 32
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
     shotsPerBurst: 3

@@ -2,7 +2,7 @@
 
 #BaseSword
 - type: entity
-  parent: BaseItem
+  parent: BaseItemThrowableSharpMedium #Karman - Yes I know its a sword, but swords are not weighed to be thrown so its worse than the combat knife
   id: BaseSword
   abstract: true
   components:

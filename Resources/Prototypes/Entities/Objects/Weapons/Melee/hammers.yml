@@ -1,6 +1,6 @@
 - type: entity
   name: sledgehammer
-  parent: BaseItem
+  parent: BaseItemThrowableBluntMedium #Karman
   id: Sledgehammer
   description: The perfect tool for wanton carnage.
   components:
@@ -73,7 +73,7 @@
 
 - type: entity
   id: SingularityHammer
-  parent: [ BaseItem, BaseMagicalContraband ]
+  parent: [ BaseItemThrowableBluntLarge, BaseMagicalContraband ] #Karman
   name: Singularity Hammer
   description: The pinnacle of close combat technology, the hammer harnesses the power of a miniaturized singularity to deal crushing blows.
   components:

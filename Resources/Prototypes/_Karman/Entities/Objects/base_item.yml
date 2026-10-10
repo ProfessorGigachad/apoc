@@ -1,0 +1,348 @@
+#for non weapons
+- type: entity
+  parent: BaseItemDamageless
+  id: BaseItem
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 0.3
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 0.3
+
+#base prototype for weapon throw damages, exists so you could alter all weapon throwing damage prototypes at once
+- type: entity
+  parent: BaseItem
+  id: BaseItemThrowableWeapon #Dont use me directly
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 1
+
+#sharp
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableSharpVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 2
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableSharpSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 4
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableSharpMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 6
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableSharpLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 8
+
+#blunt
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableBluntVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableBluntSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableBluntMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 6
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableBluntLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+
+#perc
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowablePointyVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 2
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowablePointySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 4
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowablePointyMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 6
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowablePointyLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 8
+
+#burn
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableHotVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 2
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableHotSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 4
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableHotMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 6
+
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableHotLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 8
+
+# # # No BaseItem parent versions # # #
+- type: entity
+  id: BaselessThrowableWeapon #Dont use me directly
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 1
+
+#sharp
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableSharpVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 2
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableSharpSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 4
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableSharpMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 6
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableSharpLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 8
+
+#blunt
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableBluntVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableBluntSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableBluntMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 6
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableBluntLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+
+#perc
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowablePointyVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 2
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowablePointySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 4
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowablePointyMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 6
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowablePointyLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 8
+
+#burn
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableHotVerySmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 2
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableHotSmall
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 4
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableHotMedium
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 6
+
+- type: entity
+  parent: BaselessThrowableWeapon
+  id: BaselessThrowableHotLarge
+  components:
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Heat: 8
+
+# # # Special bases # # #
+#energy melee weapons
+- type: entity
+  parent: BaseItemThrowableWeapon
+  id: BaseItemThrowableEnergyWeapon
+  components:
+  - type: ComponentToggler
+    components:
+    - type: Tool
+      qualities:
+      - Slicing
+    - type: DisarmMalus
+      malus: 0.6
+    - type: Execution
+      doAfterDuration: 4.0
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Heat: 8

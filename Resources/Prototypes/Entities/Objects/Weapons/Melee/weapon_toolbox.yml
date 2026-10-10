@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseItemThrowableBluntLarge #Karman - THONK
   id: WeaponMeleeToolboxRobust
   name: robust toolbox
   description: A tider's weapon.

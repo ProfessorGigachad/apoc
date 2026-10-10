@@ -1,5 +1,5 @@
 - type: entity
-  parent: [SolutionFood, BaseItem]
+  parent: [SolutionFood, BaseItemDamageless] #Karman BaseItemDamageless
   id: BasePaper
   abstract: true
   components:

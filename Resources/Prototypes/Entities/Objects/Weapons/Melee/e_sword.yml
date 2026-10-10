@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMeleeWeaponEnergy # more generic naming in case someone makes like, idk, an energy axe
-  parent: BaseItem
+  parent: BaseItemThrowableEnergyWeapon #Karman
   abstract: true
   components:
   - type: EnergySword
@@ -12,15 +12,15 @@
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
-  - type: ComponentToggler
-    components:
-    - type: Tool
-      qualities:
-      - Slicing
-    - type: DisarmMalus
-      malus: 0.6
-    - type: Execution
-      doAfterDuration: 4.0
+#  - type: ComponentToggler #Karman - Contained in parent
+#    components:
+#    - type: Tool
+#      qualities:
+#      - Slicing
+#    - type: DisarmMalus
+#      malus: 0.6
+#    - type: Execution
+#      doAfterDuration: 4.0
   - type: ItemToggleHot
   - type: ItemToggleSize
     activatedSize: Huge
@@ -128,15 +128,15 @@
       path: /Audio/Weapons/ebladehum.ogg
       params:
         volume: -3
-  - type: ComponentToggler
-    components:
-    - type: Tool
-      qualities:
-      - Slicing
-    - type: DisarmMalus
-      malus: 0.4
-    - type: Execution
-      doAfterDuration: 4.0
+#  - type: ComponentToggler #Karman - Contained in parent
+#    components:
+#    - type: Tool
+#      qualities:
+#      - Slicing
+#    - type: DisarmMalus
+#      malus: 0.4
+#    - type: Execution
+#      doAfterDuration: 4.0
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger_loud.rsi
     layers:
@@ -195,17 +195,17 @@
         Slash: 10
         Heat: 10
     deactivatedSecret: true
-  - type: ComponentToggler
-    components:
-    - type: Tool
-      qualities:
-      - Slicing
-    - type: DisarmMalus
-      malus: 0.4
-    - type: Execution
-      doAfterDuration: 4.0
-    - type: Contraband
-      severity: Syndicate
+#  - type: ComponentToggler #Karman - Contained in parent
+#    components:
+#    - type: Tool
+#      qualities:
+#      - Slicing
+#    - type: DisarmMalus
+#      malus: 0.4
+#    - type: Execution
+#      doAfterDuration: 4.0
+#    - type: Contraband
+#      severity: Syndicate
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger.rsi
     layers:
@@ -321,15 +321,15 @@
       path: /Audio/Weapons/ebladehum.ogg
       params:
         volume: 3
-  - type: ComponentToggler
-    components:
-    - type: DisarmMalus
-      malus: 0.7
-    - type: Execution
-      doAfterDuration: 4.0
-    - type: Tool
-      qualities:
-      - Slicing
+#  - type: ComponentToggler
+#    components:
+#    - type: DisarmMalus
+#      malus: 0.7
+#    - type: Execution
+#      doAfterDuration: 4.0
+#    - type: Tool
+#      qualities:
+#      - Slicing
   - type: Wieldable
     wieldSound: null # esword light sound instead
   - type: MeleeWeapon

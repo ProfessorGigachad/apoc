@@ -1,6 +1,6 @@
 - type: entity
   name: pickaxe
-  parent: BaseItem
+  parent: BaseItemThrowableBluntSmall
   id: Pickaxe
   description: Notched to perfection, for jamming it into rocks.
   components:
@@ -82,7 +82,7 @@
 
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseItemThrowableBluntMedium
   id: BaseWeaponCrusher # Crusher? But I...
   name: crusher
   description: An early design of the proto-kinetic accelerator.

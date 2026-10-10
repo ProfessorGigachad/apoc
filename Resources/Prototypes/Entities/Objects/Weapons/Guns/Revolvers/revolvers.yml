@@ -1,6 +1,6 @@
 - type: entity
   name: BaseWeaponRevolver
-  parent: BaseItem
+  parent: BaseItemThrowableBluntVerySmall #Karman
   id: BaseWeaponRevolver
   description: A rooty tooty point and shooty.
   abstract: true

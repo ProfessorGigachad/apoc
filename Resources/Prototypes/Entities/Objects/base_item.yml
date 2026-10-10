@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  id: BaseItem
+  id: BaseItemDamageless #Karman - New BaseItem in karmans base_item.yml to be used as the new default parent so all items deal some damage on hit
   name: "item"
   components:
   - type: Item

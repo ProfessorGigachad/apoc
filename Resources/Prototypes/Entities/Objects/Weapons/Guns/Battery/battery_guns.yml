@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseItemDamageless #Karman
   id: BaseWeaponBatteryNoAmmoCounter
   components:
   - type: Sprite
@@ -69,7 +69,7 @@
 
 - type: entity
   id: BaseWeaponPowerCell
-  parent: BaseItem
+  parent: BaseItemDamageless #Karman
   abstract: true
   components:
   - type: Sprite
@@ -151,7 +151,7 @@
 
 - type: entity
   name: svalinn laser pistol
-  parent: [BaseWeaponPowerCellSmall, BaseSecurityContraband]
+  parent: [BaseWeaponPowerCellSmall, BaseSecurityContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponLaserSvalinn
   description: A cheap and widely used laser pistol.
   components:
@@ -180,7 +180,7 @@
 
 - type: entity
   name: retro laser blaster
-  parent: [BaseWeaponBatterySmall, BaseMajorContraband]
+  parent: [BaseWeaponBatterySmall, BaseMajorContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponLaserGun
   description: A weapon using light amplified by the stimulated emission of radiation.
   components:
@@ -209,7 +209,7 @@
 
 - type: entity
   name: makeshift laser pistol
-  parent: [BaseWeaponBatterySmall, BaseMinorContraband]
+  parent: [BaseWeaponBatterySmall, BaseMinorContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponMakeshiftLaser
   description: Better pray it won't burn your hands off.
   components:
@@ -243,7 +243,7 @@
 
 - type: entity
   name: tesla gun
-  parent: [BaseWeaponBattery, BaseMajorContraband]
+  parent: [BaseWeaponBattery, BaseMajorContraband, BaselessThrowableBluntSmall] #Karman BaselessThrowableBluntSmall
   id: WeaponTeslaGun
   description: The power of the primordial element of lightning in your hands.
   components:
@@ -276,7 +276,7 @@
 
 - type: entity
   name: laser carbine
-  parent: [BaseLaserRifle, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseLaserRifle, BaseGunWieldable, BaseSecurityContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponLaserCarbine
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
 
@@ -295,7 +295,7 @@
 
 - type: entity
   name: pulse pistol
-  parent: [BaseWeaponBatterySmall, BaseDeathSquadContraband]
+  parent: [BaseWeaponBatterySmall, BaseDeathSquadContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponPulsePistol
   description: A state-of-the-art energy pistol favoured as a sidearm by elite Nanotrasen operatives.
   components:
@@ -335,7 +335,7 @@
 
 - type: entity
   name: pulse carbine
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponPulseCarbine
   description: A high-tech energy carbine favoured by elite Nanotrasen operatives.
   components:
@@ -373,7 +373,7 @@
 
 - type: entity
   name: pulse rifle
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseDeathSquadContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponPulseRifle
   description: A weapon almost as infamous as its users.
   components:
@@ -409,7 +409,7 @@
 
 - type: entity
   name: laser cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponLaserCannon
   description: A heavy duty, high powered laser weapon.
   components:
@@ -445,7 +445,7 @@
 
 - type: entity
   name: portable particle decelerator
-  parent: [BaseWeaponBattery, BaseEngineeringContraband]
+  parent: [BaseWeaponBattery, BaseEngineeringContraband, BaselessThrowableBluntLarge] #Karman BaselessThrowableBluntLarge
   id: WeaponParticleDecelerator
   description: A portable particle decelerator capable of decomposing a tesla or singularity.
   components:
@@ -478,7 +478,7 @@
 
 - type: entity
   name: x-ray cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponXrayCannon
   description: An experimental weapon that uses concentrated x-ray energy against its target.
   components:
@@ -510,7 +510,7 @@
 
 - type: entity
   name: practice disabler
-  parent: BaseWeaponBatterySmall
+  parent: [BaseWeaponBatterySmall, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponDisablerPractice
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets making it mostly harmless.
   components:
@@ -583,7 +583,7 @@
 
 - type: entity
   name: disabler SMG
-  parent: [BaseWeaponBattery, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseSecurityContraband, BaselessThrowableBluntSmall] #Karman BaselessThrowableBluntSmall
   id: WeaponDisablerSMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
@@ -624,7 +624,7 @@
 
 - type: entity
   name: taser
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponTaser
   description: A low-capacity, energy-based stun gun used by security teams to subdue targets at close range.
   components:
@@ -680,7 +680,7 @@
 
 - type: entity
   name: antique laser pistol
-  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponAntiqueLaser
   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
   components:
@@ -725,7 +725,7 @@
 
 - type: entity
   name: advanced laser pistol
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponAdvancedLaser
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
   components:
@@ -765,7 +765,7 @@
 
 - type: entity
   name: C.H.I.M.P. handcannon
-  parent: [BaseWeaponBatterySmall, BaseScienceContraband]
+  parent: [BaseWeaponBatterySmall, BaseScienceContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponPistolCHIMP
   description: Just because it's a little C.H.I.M.P. doesn't mean it can't punch like an A.P.E.
   components:
@@ -831,7 +831,7 @@
 
 - type: entity
   name: eye of a behonker
-  parent: BaseWeaponBatterySmall
+  parent: [BaseWeaponBatterySmall, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponBehonkerLaser
   description: The eye of a behonker, it fires a laser when squeezed.
   components:
@@ -858,7 +858,7 @@
 
 - type: entity
   name: energy shotgun
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaselessThrowableBluntMedium] #Karman BaselessThrowableBluntMedium
   id: WeaponEnergyShotgun
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
@@ -902,7 +902,7 @@
 
 - type: entity
   name: energy magnum
-  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband, BaselessThrowableBluntVerySmall] #Karman BaselessThrowableBluntVerySmall
   id: WeaponEnergyMagnum
   description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, window piercing, or non-lethal disabling.
   components:
@@ -950,7 +950,7 @@
 
 - type: entity
   name: temperature gun
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaselessThrowableBluntMedium]
   id: WeaponTemperatureGun
   description: An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
   components:
